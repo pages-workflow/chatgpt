@@ -1,0 +1,108 @@
+/* Basic Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Focus styles */
+:focus-visible {
+  outline: 3px solid #005f73;
+  outline-offset: 2px;
+}
+
+/* Skip link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #005f73;
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 100;
+  text-decoration: none;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+/* Layout and typography */
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.6;
+  background: #f8f9fa;
+  color: #222;
+}
+
+header,
+main,
+footer {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav a {
+  color: #005f73;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+nav a:hover,
+nav a:focus {
+  text-decoration: underline;
+}
+
+section + section {
+  margin-top: 2rem;
+}
+
+article + article {
+  margin-top: 1rem;
+}
+
+form {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 400px;
+}
+
+input,
+textarea,
+button {
+  font: inherit;
+  padding: 0.5rem;
+}
+
+button {
+  background: #005f73;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover,
+button:focus {
+  background: #0a9396;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  border-top: 1px solid #ccc;
+  padding-top: 1rem;
+}

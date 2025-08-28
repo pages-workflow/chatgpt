@@ -1,19 +1,58 @@
-<!Doctype HTML>
-<html>
-  <body>
-  <P></P>
-</body>
-</html>
-
-<!doctype html>
-<html lang="eng">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>Interweb Stellar LLC</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Accessible Web Experience</title>
+  <meta name="description" content="Accessible, responsive website built with WCAG guidelines in mind.">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <p>Affordable rapid web-designs and seamless communication and support.</p>
-<p><i>A small business that gets your small business.</i></p>
-  <button>big</button>
+  <a class="skip-link" href="#main">Skip to main content</a>
+  <header>
+    <h1>Accessible Web Experience</h1>
+    <nav aria-label="Primary">
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="main">
+    <section id="about">
+      <h2>About</h2>
+      <p>We craft inclusive, performant websites that welcome every visitor. Our design process centers around accessibility from day one.</p>
+    </section>
+    <section id="services">
+      <h2>Services</h2>
+      <article>
+        <h3>Responsive Design</h3>
+        <p>Layouts that look great on any device without sacrificing usability or speed.</p>
+      </article>
+      <article>
+        <h3>Accessibility Audits</h3>
+        <p>Thorough evaluations to ensure your site meets WCAG guidelines and delivers a smooth experience for all users.</p>
+      </article>
+    </section>
+    <section id="contact">
+      <h2>Contact</h2>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Send us a message</legend>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" required>
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required>
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+          <button type="submit">Send</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2024 Accessible Web Experience. All rights reserved.</p>
+  </footer>
 </body>
 </html>
